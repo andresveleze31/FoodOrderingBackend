@@ -13,6 +13,8 @@ router.get(
     FoodRestaurantController.getRestaurant
 );
 
+router.get("/", FoodRestaurantController.getAllRestaurants);
+
 router.get(
   "/search/:city",
   param("city")
